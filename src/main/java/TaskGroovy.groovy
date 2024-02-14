@@ -4,13 +4,17 @@ println array
 
 def arrayMap = [:]
 
-    for (int x : array) {
-        if(arrayMap.containsKey(x)){
-            def y = arrayMap[x]
-            arrayMap[x]=y+1
+    for (i in array) {
+        if(arrayMap.containsKey(i)){
+            def y = arrayMap[i]
+            arrayMap[i]=y+1
         } else {
-            arrayMap[x]=1
+            arrayMap[i]=1
         }
     }
+
+
+
+
 println arrayMap
 
